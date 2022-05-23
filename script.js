@@ -77,14 +77,14 @@ function display (array){
 
 
 function deleteTodo(id) {
-    const deleteUrl = 'https://62860d21f0e8f0bb7c0f434d.mockapi.io/todos/' + id;
+    const deleteUrl = 'https://628b2f157886bbbb37b20caa.mockapi.io/todos/' + id;
     const fetchConf = {
         method: 'delete'
     }
     fetch(deleteUrl, fetchConf).then(responseCallBack).then(deleteCallback)
 }
 
-const initApp = () => fetch('https://62860d21f0e8f0bb7c0f434d.mockapi.io/todos').then(responseCallBack).then(resultCallBack).catch(catchError);
+const initApp = () => fetch('https://628b2f157886bbbb37b20caa.mockapi.io/todos').then(responseCallBack).then(resultCallBack).catch(catchError);
 
 
 initApp();
